@@ -1,7 +1,11 @@
+#main method
+#where i will call and test my functions
 def main():
     blue()
     blastoff()
-    candy_shop()
+    tot = candy_shop()
+    print("Cost: " + str(tot))
+
 
 #blue():
 #creates integer red = 3 and multiplies by 12 to make purple
@@ -20,13 +24,16 @@ def blastoff():
         print(count-i)
     print("blastoff")
 
+
+#candy_shop():
+#should return
 def candy_shop():
     candies = ["lollipops", "whoppers", "starbursts"]
     candies.append("kitkat")
     candies.insert(1, "skittles")
     candies.sort()
     idx = candies.index("kitkat")
-    candies.remove(idx)
+    candies.pop(idx)
     print(candies)
     user_candies = []
     user_candies.append(input("Candy 1: "))
@@ -36,8 +43,8 @@ def candy_shop():
     print(len(all_candies))
     for i in all_candies:
         print(i)
-
-
+    cost = len(all_candies) * 1.25
+    return cost
 
 
 
