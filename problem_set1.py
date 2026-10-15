@@ -33,7 +33,8 @@ def blastoff():
 
 
 #candy_shop():
-#adds a list of candies with 3 of users choice and returns total cost where each is $1.25
+#adds a list of candies with 3 of users choice to list of favorite cnadies and returns total cost where each is $1.25
+#prints length and list of all candies (each on separate lines)
 def candy_shop():
     #4a) Initialize a new list, candies, with three of your favorite candies
     candies = ["lollipops", "whoppers", "starbursts"]
@@ -66,8 +67,9 @@ def candy_shop():
     #4m) Print the total cost in the main method
     return cost
 
-#fruits_pricing():
+#fruit_pricing():
 #creates fruit and price dictionary, adds pear, and calcs cost of shopping
+#prints price of peach, prints all fruits that cost at least 1.25 dollars, and prints total of shopping trip
 def fruit_pricing():
     #5a) Create and initialize a dictionary, fruits, with the following key-value (fruit-price) pairs: apple - 0.75, banana - 1.25, orange - 0.80, peach - 2.25, coconut - 2.80
     fruits = {"apple": 0.75, "banana": 1.25, "orange": 0.80, "peach": 2.25, "coconut": 2.80}
@@ -85,7 +87,5 @@ def fruit_pricing():
     #or could make a for loop like earlier. make dictionary w/ quantities for each. then multiply price and quantity for each fruit
 
 
-
-    
 if __name__ == "__main__":
     main()
