@@ -47,6 +47,8 @@ def candy_shop():
     cost = len(all_candies) * 1.25
     return cost
 
+#fruits_pricing():
+#creates fruit and price dictionary, adds pear, and calcs cost of shopping
 def fruit_pricing():
     fruits = {"apple": 0.75, "banana": 1.25, "orange": 0.80, "peach": 2.25, "coconut": 2.80}
     fruits["pear"] = 1.15
